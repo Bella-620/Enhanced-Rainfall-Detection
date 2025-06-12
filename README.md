@@ -20,19 +20,19 @@ Trained on NVIDIA GeForce RTX 3090
 ⚠️ Note: Results may vary slightly with different versions of PyTorch/CUDA.
 
 Reproduction Steps:
-1) Data Preprocessing
+1) Data Preprocessing.
 Run the preprocessing script to generate regular time series.
 
-2) Continuous Wavelet Transform (CWT)
+3) Continuous Wavelet Transform (CWT).
 Execute cwt.py to convert CML attenuation time series into scalograms.
 
-3) Class Balancing
+4) Class Balancing.
 Run random_sampling.py to balance the number of wet (rainy) and dry samples in the training set.
 
-4) Model Training & Evaluation
+5) Model Training & Evaluation.
 Execute cnn_attention.py to train the CNN+CA (Convolutional Neural Network with Channel Attention) model and obtain wet/dry classification results.
 
-Important Notes
+Important Notes:
 Path Configuration:
 The storage paths for generated files may differ between scripts due to separate Python interpreter runs. Modify paths in the scripts if needed.
 
